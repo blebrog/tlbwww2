@@ -279,8 +279,8 @@
 if ($_POST)
 {
 	////////// USTAWIENIA //////////
-	$email = 'adres e-mail gdzie wysłać formularz';	// Adres e-mail adresata
-	$subject = 'temat';	// Temat listu
+	$email = 'biuro@telbridge.com.pl';	// Adres e-mail adresata
+	$subject = 'subject';	// Temat listu
 	$message = 'Dziękujemy za wysłanie formularza';	// Komunikat
 	$error = 'Wystąpił błąd podczas wysyłania formularza';	// Komunikat błędu
 	$charset = 'utf-8';	// Strona kodowa
