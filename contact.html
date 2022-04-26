@@ -35,6 +35,7 @@
 
 </head>
 <body>
+<a name="start"></a>
   <div class="body-inner">
 
     <div id="top-bar" class="top-bar">
@@ -134,7 +135,7 @@
               <div id="navbar-collapse" class="collapse navbar-collapse">
                   <ul class="nav navbar-nav mr-auto">
                     <li class="nav-item dropdown active">
-                        <a href="index.html" class="nav-link dropdown-toggle" data-toggle="dropdown">Start </a>
+                        <a href="index.html/#start" class="nav-link dropdown-toggle" >Start </a>
                        <!-- <ul class="dropdown-menu" role="menu">
                           <li class="active"><a href="index.html">Home One</a></li>
                           <li><a href="index-2.html">Home Two</a></li>
@@ -142,7 +143,7 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a href="index.html" class="nav-link dropdown-toggle" data-toggle="dropdown">O Nas </a>
+                        <a href="index.html#onas" class="nav-link dropdown-toggle">O Nas </a>
                       <!--  <ul class="dropdown-menu" role="menu">
                           <li><a href="about.html">About Us</a></li>
                           <li><a href="team.html">Our People</a></li>
@@ -153,16 +154,16 @@
                     </li>
             
                     <li class="nav-item dropdown">
-                        <a href="#uslugi" class="nav-link dropdown-toggle" data-toggle="dropdown">Nasze usługi </a>
+                        <a href="index.html#onas" class="nav-link dropdown-toggle" >Nasze usługi </a>
                         
                     </li>
             
                     <li class="nav-item dropdown">
                       <a href="#liczby" class="nav-link dropdown-toggle" data-toggle="dropdown">Regulaminy <i class="fa fa-angle-down"></i></a>
                       <ul class="dropdown-menu" role="menu">
-                        <li><a href="pdf/Regulamin_uslugi_TLB_DirectPay.pdf">Regulamin usługi</a></li>
-                        <li><a href="pdf/Polityka_prywatnosci_TLB_DirectPay.pdf">Polityka prywatności</a></li>
-                        <li><a href="pdf/Polityka_cookies_TLB_DirectPay.pdf"> Polityka cookies</a></li>
+                        <li><a href="pdf/Regulamin_uslugi_TLB_DirectPay.pdf" target="_blank">Regulamin usługi</a></li>
+                        <li><a href="pdf/Polityka_prywatnosci_TLB_DirectPay.pdf" target="_blank">Polityka prywatności</a></li>
+                        <li><a href="pdf/Polityka_cookies_TLB_DirectPay.pdf" target="_blank"> Polityka cookies</a></li>
                       </ul>
                   </li>
   
@@ -202,7 +203,7 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb justify-content-center">
                       <li class="breadcrumb-item"><a href="index.html">Start</a></li>
-                      <li class="breadcrumb-item"><a href="index.html">O Nas</a></li>
+                      <li class="breadcrumb-item"><a href="index.html#onas">O Nas</a></li>
                       <li class="breadcrumb-item active" aria-current="page">Kontakt</li>
                     </ol>
                 </nav>
@@ -272,46 +273,9 @@
 
     <div class="row">
       <div class="col-md-12">
-        <h3 class="column-title">Formularz kontaktowy</h3>
-        <!-- contact form works with formspree.io  -->
-        <!-- contact form activation doc: https://docs.themefisher.com/constra/contact-form/ -->
-        <?php
-if ($_POST)
-{
-	////////// USTAWIENIA //////////
-	$email = 'adres e-mail gdzie wysłać formularz';	// Adres e-mail adresata
-	$subject = 'temat';	// Temat listu
-	$message = 'Dziękujemy za wysłanie formularza';	// Komunikat
-	$error = 'Wystąpił błąd podczas wysyłania formularza';	// Komunikat błędu
-	$charset = 'utf-8';	// Strona kodowa
-	//////////////////////////////
-	
-	if (!isset($_POST['captcha']) || $_POST['captcha'] != '') echo $error;
-	else
-	{
-		unset($_POST['captcha']);
-		$head =
-			"MIME-Version: 1.0\r\n" .
-			"Content-Type: text/plain; charset=$charset\r\n" .
-			"Content-Transfer-Encoding: 8bit";
-		$body = '';
-		foreach ($_POST as $name => $value)
-		{
-			if (is_array($value))
-			{
-				for ($i = 0; $i < count($value); $i++)
-				{
-					$body .= "$name=" . (get_magic_quotes_gpc() ? stripslashes($value[$i]) : $value[$i]) . "\r\n";
-				}
-			}
-			else $body .= "$name=" . (get_magic_quotes_gpc() ? stripslashes($value) : $value) . "\r\n";
-		}
-		echo mail($email, "=?$charset?B?" . base64_encode($subject) . "?=", $body, $head) ? $message : $error;
-	}
-}
-else
-{
-?>
+      <!--  <h3 class="column-title">Formularz kontaktowy</h3>
+     
+        
 
 
   <form id="contact-form" action="#" method="post" role="form">
@@ -351,7 +315,7 @@ else
 <?php
 }
 ?>
-        
+  -->      
       </div>
 
     </div><!-- Content row -->
