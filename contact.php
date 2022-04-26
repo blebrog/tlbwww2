@@ -35,6 +35,7 @@
 
 </head>
 <body>
+<a name="start"></a>
   <div class="body-inner">
 
     <div id="top-bar" class="top-bar">
@@ -134,7 +135,7 @@
               <div id="navbar-collapse" class="collapse navbar-collapse">
                   <ul class="nav navbar-nav mr-auto">
                     <li class="nav-item dropdown active">
-                        <a href="index.html" class="nav-link dropdown-toggle" data-toggle="dropdown">Start </a>
+                        <a href="index.html/#start" class="nav-link dropdown-toggle" >Start </a>
                        <!-- <ul class="dropdown-menu" role="menu">
                           <li class="active"><a href="index.html">Home One</a></li>
                           <li><a href="index-2.html">Home Two</a></li>
@@ -142,7 +143,7 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a href="index.html" class="nav-link dropdown-toggle" data-toggle="dropdown">O Nas </a>
+                        <a href="index.html#onas" class="nav-link dropdown-toggle">O Nas </a>
                       <!--  <ul class="dropdown-menu" role="menu">
                           <li><a href="about.html">About Us</a></li>
                           <li><a href="team.html">Our People</a></li>
@@ -153,16 +154,16 @@
                     </li>
             
                     <li class="nav-item dropdown">
-                        <a href="#uslugi" class="nav-link dropdown-toggle" data-toggle="dropdown">Nasze usługi </a>
+                        <a href="index.html#onas" class="nav-link dropdown-toggle" >Nasze usługi </a>
                         
                     </li>
             
                     <li class="nav-item dropdown">
                       <a href="#liczby" class="nav-link dropdown-toggle" data-toggle="dropdown">Regulaminy <i class="fa fa-angle-down"></i></a>
                       <ul class="dropdown-menu" role="menu">
-                        <li><a href="pdf/Regulamin_uslugi_TLB_DirectPay.pdf">Regulamin usługi</a></li>
-                        <li><a href="pdf/Polityka_prywatnosci_TLB_DirectPay.pdf">Polityka prywatności</a></li>
-                        <li><a href="pdf/Polityka_cookies_TLB_DirectPay.pdf"> Polityka cookies</a></li>
+                        <li><a href="pdf/Regulamin_uslugi_TLB_DirectPay.pdf" target="_blank">Regulamin usługi</a></li>
+                        <li><a href="pdf/Polityka_prywatnosci_TLB_DirectPay.pdf" target="_blank">Polityka prywatności</a></li>
+                        <li><a href="pdf/Polityka_cookies_TLB_DirectPay.pdf" target="_blank"> Polityka cookies</a></li>
                       </ul>
                   </li>
   
